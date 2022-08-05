@@ -1,0 +1,765 @@
+@font-face {
+    font-family: 'quantumregular';
+    src: url('../fonts/quantum-webfont.woff2') format('woff2'),
+         url('../fonts/quantum-webfont.woff') format('woff');
+  
+  }
+
+*{
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: capitalize;
+    text-align: justify;
+    scroll-behavior: smooth;
+    scrollbar-color: transparent transparent;
+}
+
+*::-webkit-scrollbar {
+    width: 0;
+}
+
+*::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+    background: transparent;
+    border: none;
+  }
+
+html{
+    background: black;
+}
+
+/************************************************************************************************ GRID *****************************************************************************/
+
+.flex{
+    display: flex;
+}
+
+.center{
+    align-items: center;
+}
+
+.j-center{
+    justify-content: center;
+}
+
+.space-b{
+    justify-content: space-between;
+}
+
+.space-e{
+    justify-content: space-evenly;
+}
+
+.space-a{
+    justify-content: space-around;
+}
+
+
+
+.column{
+    flex-direction: column;
+}
+
+#bentley{
+    width: 50%;
+}
+
+.font-q{
+    font-family:'quantumregular';
+}
+
+.p15{
+    padding: 15%;
+}
+
+.w30{
+    width: 30%;
+}
+
+.w50{
+    width: 49%;
+}
+
+.w60{
+    width: 57%;
+}
+
+.w100{
+    width: 100%;
+}
+
+.m5{
+   padding: 5%;
+}
+
+.bm2{
+    margin-bottom: 2%;
+}
+
+.bm{
+    margin-bottom: 5%;
+}
+
+.mb20{
+    margin-bottom: 20vh;
+}
+
+.ml25{
+    margin-left: 25%;
+}
+
+a{
+    text-decoration: none;
+}
+
+.btn{
+    font-weight: 500;
+    font-size: 25px;
+    text-align: center;
+    color: #D51C2A;
+    border: 2px solid #D51C2A;
+    width: 13rem;
+    padding: .5rem 0;
+    transition-duration: .25s;
+}
+
+.btn:hover{
+    background: #D51C2A;
+    color: #ffffff;
+}
+
+h1{
+    font-size: 3.5rem;
+    margin-bottom: 1%;
+    font-weight: 400;
+}
+
+h2{
+    font-size: 2.5rem;
+    font-weight: 500;
+    text-align: center;
+    color: #D51C2A;
+    text-transform: uppercase;
+    position: absolute;
+    top: 10%;
+
+}
+
+h4{
+    font-weight: 500;
+    font-size: 20px;
+    text-align: center;
+    color: #D51C2A;
+    text-transform: uppercase;
+}
+
+/**************************************************************************************** Fond HEADER ***************************************************************************************************************/
+.phone-slice{
+    display: none;
+}
+
+#img1{
+    background: linear-gradient(1.5deg, #000000 5.78%, rgba(0, 0, 0, 0.43) 33.71%, rgba(0, 0, 0, 0) 98.72%), url(/assets/image/Activité\ acceuil.jpg);
+    background-size:cover;
+    position: relative;
+    width: 100%;
+    height: 90vh;
+}
+#img2{
+    background: linear-gradient(2.54deg, #000000 5.78%, rgba(0, 0, 0, 0.43) 40.34%, rgba(0, 0, 0, 0) 98.72%), url(/assets/image/Image\ 24-06-2022.jpg);
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    height: 90vh;
+
+}
+
+.img  .btn{
+    position: absolute;
+    bottom: 15%;
+}
+
+
+@media screen and (max-width: 768px){
+    #img2{
+        background-position: top;
+    }
+}
+
+@media screen and (max-width:425px){
+
+    .phone-slide{
+        scrollbar-color:none;
+        overflow-x: scroll;
+        scroll-behavior: smooth;
+        scroll-snap-type: x mandatory;
+    }
+
+    .phone-slice{
+        display: block;
+        position: absolute;
+        bottom: 16%;
+    }
+
+    .slice1{
+        right: 12%;
+    }
+    
+    .slice2{
+       left: 12%;
+    }
+
+    .btn {
+        font-size: 20px;
+        width: 10rem;
+    }
+
+    .img{
+        flex: 0 0 100%;
+    }
+
+}
+
+/*µµµµµµµµµµµµµµµµµµµµµµµµµµµµµµµµµµµµµµµµµµµµµµµµµµµµµµµµµµµµµµµµµµµµµµµµµµµµµµµµµµµµµµµ MAIN µµµµµµµµµµµµµµµµµµµµµµµµµµµµµµµµµµµ */
+
+.wall{
+    width: 45%;
+    height: 396px;
+    background: linear-gradient(269.93deg, #000000 10.25%, rgba(0, 0, 0, 0) 66.54%), url(/assets/image/Rectangle\ 57.png)no-repeat;
+    /* background-size:cover; */
+    margin-left: 4%;
+}
+
+#pres article{
+    margin-left: 5%;
+}
+
+article p,
+.slider p,
+.bla p{
+    font-size: 22px;
+    text-transform: none;
+}
+
+.choix{
+    position: relative;
+    top: 20%;
+}
+
+.choix .btn{
+    margin: 5%;
+}
+
+@media screen and (max-width: 1024px){
+    .wall{
+        background-position: top;
+    }
+    .wall {
+        height: 330px;
+    }
+    #petit{
+        width: 35%;
+    }
+    .choix .btn {
+        margin: 2%;
+    }
+    #pres article {
+        margin-left: 2%;
+    }
+}
+
+@media screen and (max-width: 768px){
+
+    .wall {
+        height: 325px;
+    }
+
+    #petit p{
+        font-size: 18px;
+    }
+
+    #petit{
+        width: 40%;
+    }
+
+    .choix .btn {
+        font-size: 15px;
+        margin: 3%;
+        width: 8rem;
+    }
+
+    #pres article {
+        margin-left: 1%;
+    }
+}
+
+@media screen and (max-width: 425px){
+
+    .wall {
+        height: 270px;
+        margin-left: 0;
+    }
+
+    #petit {
+        width: 50%;
+    }
+    #petit p {
+        font-size: 12px;
+    }
+    #pres article {
+        margin-left: -4%;
+    }
+
+    .wall {
+        height: 190px;
+        background: linear-gradient(269.93deg, #000000 10.25%, rgba(0, 0, 0, 0) 66.54%), url(/assets/image/rectangle56.jpg)no-repeat;
+        background-size:cover;
+        background-position: bottom;
+    }
+
+    .choix .btn{
+        padding: 0.2rem 0;
+    }
+}
+/**************************************************************************************************************** SLIDER ********************************************************/
+
+.slider {
+    position: relative;
+    width: 100%;
+    height: 70vh;
+    padding: 30px auto 0;
+    
+    
+}
+
+.slider div{
+    width: 70%;
+    height: 95%;
+    padding: 0 30px;
+    position: absolute;
+    top: 0;
+    left: 13%;
+}
+
+.selector,
+.slider .btn{
+    position: absolute;
+    bottom: 15%;
+    z-index: 5;
+}
+
+.selector{
+    background: none;
+    border: none;
+    bottom: 16.5%;
+}
+#next-photo{
+    left: 73%;
+}
+
+#previous-photo{
+    left: 53%;
+}
+
+.slider  .btn{
+    left: 58%;
+}
+
+.slider img{
+    height: 50%;
+}
+
+.slider p{
+    margin-left: 6rem;
+    width: 40%;
+    height: 40%;
+    text-align: justify;
+    
+}
+
+.slide span{
+    position: absolute;
+    bottom: 26%;
+    right: 9%;
+    font-weight: 600;
+    color: #D51C2A;
+}
+
+.slide article{
+    height: 100%;
+    width: 104%;
+}
+
+.slide{
+    background: linear-gradient(89.86deg, rgba(213, 28, 42, 0) 0.6%, rgba(213, 28, 42, 0) 19.21%, rgba(213, 28, 42, 0.19) 95.99%);
+}
+
+.visible{
+    animation: display 1s;
+}
+
+@keyframes display {
+    0% {
+      transform: translateY(-15%);
+    }
+    110% {
+      transform: translateY(0);
+    }
+}
+
+@media screen and (max-width: 1440px){
+
+    .slider {
+        height: 75vh;
+    }
+    .slider img {
+        height: 40%;
+    }
+    .slider p {
+        margin-left: 4rem;
+        width: 50%;
+        height: 35%;
+        font-size: 20px;
+    }
+    #next-photo {
+        left: 75%;
+    }
+    #previous-photo {
+        left: 54%;
+    }
+}
+
+@media screen and (max-width: 1024px){
+    h2{
+        font-size: 2.1rem;
+    }
+
+    .slider {
+        height: 60vh;
+    }
+
+    .slider div {
+        width: 77%;
+        left: 10%;
+    }
+
+    .slider p {
+        font-size: 17px;
+    }
+
+    .slider .btn {
+        font-size: 20px;
+        width: 10rem;
+    }
+
+    #next-photo {
+        left: 76%;
+    }
+
+    #previous-photo {
+        left: 55%;
+    }
+}
+
+@media screen and (max-width: 768px){
+
+    h2{
+        font-size: 1.5rem;
+    }
+
+    .slider {
+        height: 55vh;
+    }
+
+    .slider div {
+        width: 77%;
+        left: 10%;
+    }
+
+    .slider p {
+        margin-left: 2rem;
+        font-size: 14px;
+    }
+
+    .slide span {
+        bottom: 24%;
+    }
+
+    .slider img {
+        height: 35%;
+    }
+    
+    .slider .btn {
+        font-size: 16px;
+        width: 8rem;
+    }
+
+}
+
+@media screen and (max-width: 425px) {
+
+    h2 {
+        top: 4%;
+    }
+
+    .slider {
+        height: 90vh;
+    }
+
+    .slider div {
+
+        width: 100%;
+        left: 0%;
+        padding: 0 0;
+    }
+
+    .slider article{
+
+        flex-direction: column;
+    }
+
+    .slider p {
+        margin-left: 0;
+        width: 80%;
+        height: 41%;
+    }
+
+    .slide span {
+        bottom: 15%;
+    }
+    
+    .slide img{
+        margin-top: 20%;
+        height: 33%;
+    }
+
+    .selector{
+        bottom: 10%;
+    }
+
+    .slider .btn {
+        bottom: 9%;
+        left: 35%;
+    }
+    
+    #next-photo {
+        left: 75%;
+    }
+
+    #previous-photo {
+        left: 26%;
+    }
+
+  
+
+
+}
+
+/********************************************************************************************* BLA OF CAR ******************************************************/
+
+.bla p,
+.bla legend{
+    position: relative;
+    right: 71%;
+}
+
+@media screen and (max-width: 1024px){
+    .bla img{
+        width: 50%;
+    }
+
+    .bla div{
+        width: 40%;
+    }
+
+    .bla p, .bla legend {
+        right: 5%;
+    }
+
+    .ml25{
+        margin-left: 10%;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .bla p {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .ml25 {
+        margin-left: 0;
+    }
+    .bla{
+        position: relative;
+        left: 5%;
+    }
+
+    .bla p{
+        font-size: 12px;
+    }
+
+
+}
+
+/* ****************************************************************  Carousel voitures ****************************************************** */
+
+#carous{
+    background: linear-gradient(90deg, rgba(213, 28, 42, 0.19) 0.52%, rgba(213, 28, 42, 0.00887293) 39.63%, rgba(213, 28, 42, 0) 61.28%, rgba(213, 28, 42, 0.19) 100%);
+}
+
+#wrapper {
+    width: 100%;
+    max-width: 65%;
+    position: relative;
+    padding: 10rem;
+}
+  
+#carousel {
+    overflow: auto;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+}
+  
+#carousel::-webkit-scrollbar {
+    height: 0;
+}
+  
+#prev,
+#next {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+}
+  
+#prev {
+    top: 50%;
+    left: -0;
+    transform: translate(50%, -50%);
+    display: none;
+}
+  
+#next {
+    top: 50%;
+    right: 0;
+    transform: translate(-50%, -50%);
+}
+  
+#content {
+    display: grid;
+    grid-gap: 6.5rem;
+    grid-auto-flow: column;
+    margin: auto;
+    box-sizing: border-box;
+}
+  
+.item {
+    width: 20rem;
+    height: 22rem;
+}
+
+.item img{
+    width: 100%;
+}
+
+legend{
+    text-align: end;
+    font-size: 10px;
+    font-weight: 200;
+}
+
+.item p{
+    text-align: center;   
+    position: relative;
+}
+
+.item p::after{
+    content: "";
+    position: absolute;
+    top: 90%;
+    left: 25%;
+    width: 50%;
+    height: 1px;
+    background-color: #ffffff;
+}
+
+@media screen and (max-width: 1440px){
+
+    #wrapper {
+        padding: 8rem;
+    }
+
+    #content {
+        grid-gap: 5.2rem;
+    }
+    .item {
+        width: 15rem;
+        height: 19rem;
+    }
+
+}
+
+@media screen and (max-width: 1024px){
+
+    h4{
+        font-size: .9rem;
+    }
+
+    .item p{
+        font-size: .8rem;
+    }
+
+    #wrapper {
+        padding: 5rem;
+    }
+
+    #wrapper {
+        max-width: 65%;
+    }
+    
+    #content {
+        grid-gap: 2.5rem;
+    }
+
+    .item {
+        width: 11.5rem;
+        height: 15rem;
+    }
+}
+
+@media screen and (max-width: 768px){
+
+    .item {
+        width: 13.5rem;
+        height: 18rem;
+    }
+    .sacrifice{
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 425px) {
+
+    #content {
+        grid-gap: 2rem;
+    }
+
+    legend {
+        font-size: 7px;
+    }
+
+    #wrapper {
+        padding: 4rem;
+    }
+}

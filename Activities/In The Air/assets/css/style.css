@@ -1,0 +1,224 @@
+@font-face {
+  font-family: 'quantumregular';
+  src: url('../fonts/quantum-webfont.woff2') format('woff2'),
+       url('../fonts/quantum-webfont.woff') format('woff');
+
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: capitalize;
+}
+body {
+  /* overflow: hidden; */
+  background: black;
+}
+h1{
+  font-size: 3rem;
+  font-weight: 500;
+  text-align: center;
+  font-family: 'quantumregular';
+}
+
+h2{
+  font-size: 2.5rem;
+  font-weight: 500;
+  text-align: center;
+  font-family: 'quantumregular';
+  color: #D51C2A;
+  text-transform: uppercase;
+  margin: 1.7rem 0;
+}
+
+h4{
+  font-weight: 500;
+  font-size: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'quantumregular';
+}
+
+.tab p{
+  font-size: 1.1rem;
+  line-height: 30px;
+  text-align: justify;
+  margin: 3rem 0;
+}
+
+
+/****************************************************************** NUMBER **********************/
+
+.container{
+  margin: 0 auto;
+  max-width: 125rem;
+}
+
+.tab .img{
+  background: linear-gradient(270deg, #000000 0%, rgba(0, 0, 0, 0) 57.47%), url(../image/Image\ 1.jpg)no-repeat;
+  background-size: cover;
+  background-position:center;
+  width: 50%;
+  height: 50vh;  
+
+}
+
+/* .tab p{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
+#img2{
+  background: linear-gradient(90.08deg, #000000 0.06%, rgba(0, 0, 0, 0) 65.33%), url(../image/Image\ 2.jpg)no-repeat;
+  background-size: cover;
+  background-position:center;
+  width: 100%;
+}
+
+#img3{
+  background: linear-gradient(270deg, #000000 0%, rgba(0, 0, 0, 0) 57.47%), url(../image/Image\ 3.jpg)no-repeat;
+  background-size: cover;
+  background-position:center;
+
+}
+
+#img4{
+  background: linear-gradient(90.08deg, #000000 0.06%, rgba(0, 0, 0, 0) 65.33%), url(../image/Image\ 4.jpg)no-repeat;
+  background-size: cover;
+  background-position:center;
+
+
+}
+
+#img5{
+  background: linear-gradient(270deg, #000000 0%, rgba(0, 0, 0, 0) 57.47%), url(../image/Image\ 5.jpg)no-repeat;
+  background-size: cover;
+  background-position:center;
+}
+
+#img6{
+  background: linear-gradient(90.08deg, #000000 0.06%, rgba(0, 0, 0, 0) 65.33%), url(../image/Image\ 6.jpg)no-repeat;
+  background-size: cover;
+  background-position:center;
+}
+
+#img7{
+  background: linear-gradient(270deg, #000000 0%, rgba(0, 0, 0, 0) 57.47%), url(../image/Image\ 7.jpg)no-repeat;
+  background-size: cover;
+  background-position:center;
+
+}
+
+.tab li:nth-child(even){
+  flex-direction: row-reverse;
+
+}
+
+article {
+  margin: 0 12rem 0 3rem;
+}
+
+@media screen and (max-width: 1440px){
+  .container{
+    margin: 0 auto;
+    max-width: 85rem;
+  }
+
+  header {
+    height: 6vw;
+  }
+
+  .tab .img {
+    width: 54%;
+  }
+
+  h2{
+    font-size: 2rem;
+  } 
+
+  h4{
+    font-size: 18px;
+  }
+
+  article {
+    margin: 0 3rem;
+  }
+}  
+
+@media screen and (max-width: 1024px){
+  article{
+    margin: 0;
+  }
+
+  .tab .img {
+    height: 40vh;
+  }
+
+  .bm2,
+  .bm {
+    margin-bottom: 10%;
+  }
+
+  .tab p {
+    font-size: .9rem;
+    line-height: 20px; 
+    margin: 1rem ;
+  }
+
+  .tab .img{
+    width: 50%;
+  } 
+
+
+  .img2 h2 {
+    margin: 1rem 0;
+  }
+  .img2 p{
+    margin: 0.9rem;
+  }
+}
+@media screen and (max-width: 768px){
+  .container {
+    margin: 0 auto;
+    max-width: 38rem;
+  }
+  .tab li,
+  .tab li:nth-child(even){
+    flex-direction: column;
+  }
+
+  .tab .img{
+    width: 100%;
+  } 
+
+  #img1{
+    background: url(../image/Image\ 1.jpg)no-repeat;
+    background-size: cover;  
+  }
+
+  #img2 {
+    background: url(../image/Image\ 2.jpg)no-repeat;
+    background-size: cover;
+    background-position:center;
+    width: 100%;
+  }
+
+}
+
+@media screen and  (max-width: 425px) {
+
+  .container {
+    margin: 0 auto;
+    max-width: 23rem;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .bm2, .bm {
+    margin-bottom: 20%;
+  }
+}

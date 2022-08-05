@@ -1,0 +1,213 @@
+@font-face {
+    font-family: 'quantumregular';
+    src: url('../fonts/quantum-webfont.woff2') format('woff2'),
+         url('../fonts/quantum-webfont.woff') format('woff');
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: capitalize;
+    text-align: justify;
+    scroll-behavior: smooth;
+    scrollbar-color: transparent transparent;
+}
+
+*::-webkit-scrollbar {
+    width: 0;
+}
+
+*::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+    background: transparent;
+    border: none;
+  }
+
+html{
+    background: black;
+}
+
+/************************************************************************************************ GRID *****************************************************************************/
+
+.flex{
+    display: flex;
+}
+
+.center{
+    align-items: center;
+}
+
+.j-center{
+    justify-content: center;
+}
+
+.space-b{
+    justify-content: space-between;
+}
+
+.space-e{
+    justify-content: space-evenly;
+}
+
+.space-a{
+    justify-content: space-around;
+}
+
+
+
+.column{
+    flex-direction: column;
+}
+
+#bentley{
+    width: 50%;
+}
+
+.font-q{
+    font-family: 'quantumregular';
+}
+
+.p15{
+    padding: 15%;
+}
+
+.w30{
+    width: 30%;
+}
+
+.w100{
+    width: 100%;
+}
+
+.m5{
+   padding: 5%;
+}
+
+.bm2{
+    margin-bottom: 2%;
+}
+
+.bm{
+    margin-bottom: 5%;
+}
+
+.mb20{
+    margin-bottom: 20vh;
+}
+
+.ml25{
+    margin-left: 25%;
+}
+
+a{
+    text-decoration: none;
+}
+
+.container {
+    height: 110vh;
+}
+
+
+h2{
+    font-size: 2rem;
+    font-weight: 500;
+    color: #D51C2A;
+    text-transform: uppercase;
+
+
+}
+
+h4{
+    font-weight: 500;
+    font-size: 20px;
+    text-align: center;
+    color: #D51C2A;
+    text-transform: uppercase;
+}
+
+.container ul li{
+    list-style:circle;
+    margin: 2%;
+}
+
+.terms{
+    max-width: 90rem;
+}
+
+.privacy{
+    max-width: 70rem;
+}
+
+.privacy p{
+    text-align: center;
+}
+
+.privacy a{
+    font-size: larger;
+    color: #D51C2A;
+}
+
+@media screen and (max-width: 1540px) {
+
+    .container {
+        height: 110vh;
+    }
+    .bm2 {
+        margin-bottom: 5%;
+    }
+    
+    .terms {
+        max-width: 80rem;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+
+    .terms {
+        max-width: 55rem;
+    }
+
+    .privacy{
+        max-width: 60rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        height: 130vh;
+    }
+
+    .container ul li {
+        list-style: circle;
+        margin: 3%;
+    }
+
+    .terms {
+        max-width: 40rem;
+    }
+}
+
+@media screen and (max-width: 429px) {
+    
+    .container ul li {
+        list-style: circle;
+        margin: 6%;
+    }
+
+    .container {
+        height: 100%;
+    }
+
+    .bm2 {
+        margin-bottom: 20%;
+    }
+
+    h2{
+        font-size: 1.5rem;
+    }
+}

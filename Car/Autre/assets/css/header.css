@@ -1,0 +1,433 @@
+@font-face {
+    font-family: 'quantumregular';
+    src: url('../fonts/quantum-webfont.woff2') format('woff2'),
+         url('../fonts/quantum-webfont.woff') format('woff');
+  
+  }
+
+
+/************************************************************************************************ GRID *****************************************************************************/
+
+.flex{
+    display: flex;
+}
+
+.center{
+    align-items: center;
+}
+
+.j-center{
+    justify-content: center;
+}
+
+.space-b{
+    justify-content: space-between;
+}
+
+.column{
+    flex-direction: column;
+}
+
+#bentley{
+    width: 50%;
+}
+
+.font-q{
+    font-family:'quantumregular';
+}
+
+.w30{
+    width: 30%;
+}
+
+.w50{
+    width: 50%;
+}
+
+.w60{
+    width: 65%;
+}
+
+.w100{
+    width: 100%;
+}
+
+.m5{
+   padding: 5%;
+}
+
+.bm{
+    margin-bottom: 5%;
+}
+
+.bm2{
+    margin-bottom: 2%;
+}
+
+a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+/************************************************************************************************ HEADER ****************************************************************************/
+header{
+  height: 4vw;
+}
+
+
+.head .nav{
+    text-transform:lowercase;
+    font-family: 'quantumregular';
+    font-weight: 400;
+   font-size: 2rem;
+}
+
+nav li a:hover{
+    color: #D51C2A;
+}
+
+li{
+    list-style: none;
+}
+
+.logo{
+    width: 194px;
+    height: 61px;
+}
+
+.header{
+    margin-top: 1%;
+    margin-left: 2%;
+    margin-right: 2%;
+    width: 100%;
+}
+
+.header::after {
+    content: "";
+    /* border-bottom: 2px solid white; */
+    width: 23rem;
+    position: absolute;
+    left: 42%;
+    top: 9%;
+}
+
+.head li  {
+    height: 3 rem;
+}
+
+
+.brands img{
+    width: 35%;
+    /* height: 100%; */
+}
+
+.brands p {
+    font-size: 0.7rem;
+    font-weight: 500;
+    margin: 1%;
+}
+
+.car:hover + .brands,
+.brands:hover{
+    visibility: visible;
+    opacity: 1;
+}
+
+.brands{ 
+    position: absolute;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    top: 9.3%;
+    left: 25%;
+    border: 1px solid red;
+    width: 35%;
+    padding: 0.5rem 1.5rem;
+    background: black;
+    transition: all .4s!important;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 3;
+}
+
+.red{
+    height: 100%;
+}
+
+#red,
+.brands p:hover{
+    font-family: 'quantumregular';
+    color: #D51C2A;
+}
+
+/*************************************************************************************** MENU ****************************************************************************************/
+
+#menu__toggle, #active{
+   display: none;
+}
+  
+#menu__toggle:checked + .menu__btn > span::after{
+    width: 10px;
+}
+#menu__toggle:checked ~ .menu__box {
+    right: 0 !important;
+}
+  
+.menu__btn {
+    position: fixed;
+    right: 7rem;
+    width: 3rem;
+    height: 1rem;
+    z-index: 1;
+}
+
+.menu__btn > span,
+.menu__btn > span::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: #ffffff;
+    transition-duration: .25s;
+}
+  
+.menu__btn > span::after{
+    content: '';
+    top: 10px;
+}
+.menu__box {
+
+    position: fixed;
+    top: 9.5%;
+    right: -100%;
+    width: 32rem;
+    list-style: none;
+    transition-duration: .25s;
+    z-index: 2;
+} 
+
+.menu__item p, .menu  p{
+    display: block;
+    top: 0;
+    left: 5%;
+    padding: 10px 10px;
+    margin: 0 10px;
+    transition-duration: .25s;
+    font-family: 'quantumregular';
+    border: 2px solid #D51C2A;
+    background-color: #1d1e1f73;
+}
+
+.menu{
+    display: none;
+}
+
+
+@media screen and (max-width: 1440px){
+
+    .w60 {
+        width: 67%;
+    }
+
+    .w50 {
+        width: 74%;
+      }
+
+    .header::after {
+        width: 19rem;
+        left: 39%;
+    }
+
+    .logo {
+        width: 175px;
+        height: 55px;
+    }
+
+    .brands {
+        left: 18%;
+        width: 55%;
+    }
+
+
+    .header{
+        width: 94%;
+    }
+
+}
+
+@media screen and (max-width: 1024px){
+    .w50{
+        width: 80%;
+    }
+
+    .w60{
+        width: 74%;
+    }
+
+    .logo {
+        width: 165px;
+        height: 55px;
+    }
+
+    .menu__btn{
+        right: 5rem;
+    }
+
+    header {
+        height: 5vw;
+    }
+
+    .header::after {
+        width: 22rem;
+        left: 34%;
+        top: 8%;
+    }
+
+    .brands{
+        top: 93%;
+        left: 12%;
+        border: 1px solid red;
+        width: 95%;
+    }
+
+
+}
+
+
+@media screen and (max-width: 768px){
+    
+    .w50 {
+        width: 100%;
+    }
+
+    .header {
+        margin-top: 2%;
+    }
+    
+    .phone-btn {
+        position: fixed;
+        top: 30px;
+        right: 3rem;
+        width: 3rem;
+        height: 1rem;
+        z-index: 12;
+    }
+
+    .phone-btn > span,
+    .phone-btn > span::after {
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 3px;
+        background-color: #ffffff;
+        transition-duration: .25s;
+    }
+
+    .phone-btn > span::after{
+        content: '';
+        top: 10px;
+    }
+
+    .test{
+        position: fixed;
+        top: 0;
+        right: -100%;
+        height: 100%;
+        width: 100%;
+        background: rgb(255, 255, 255);
+        transition: all 0.6s ease-in-out;
+        flex-direction: column;
+        z-index: 11;
+    }
+    
+    .test .head{
+        height: 100vh;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    
+    .car:hover + .brands,
+    .brands:hover{
+        visibility: hidden;
+        opacity: 0;
+    }
+    
+    #active:checked + .phone-btn > span::after{
+        width: 10px;
+    }
+    
+    #active:checked + .phone-btn > span::after,
+    #active:checked + .phone-btn > span{
+        background-color: #D51C2A;
+    }
+    
+    .head a{
+        color: #000;
+    }
+    #active:checked ~ .test{
+         right: 0 !important;
+    }
+
+    .menu{
+        display: block;
+        /* position: relative; */
+        /* left: 10%; */
+    }
+
+    .menu-d{
+        justify-content: center;
+    }
+    
+    .header::after,
+    .menu__btn,
+    .menu__item,
+    #active {
+        display: none;
+    }
+
+    .head li{
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 425px){
+
+    .header {
+        margin-top: 4%;
+    }
+
+    .logo{
+        width: 118px;
+        height: 37px;
+    }
+
+    .menu{
+        left: 0%;
+    }
+    .menu-d{
+        flex-direction: column;
+    }
+    .head li {
+        text-align: center;
+        margin: 0.5rem 0;
+    }
+    .menu p {
+        font-size: 15px;
+        /* left: 5%; */
+        margin: 0;
+        font-weight: 700;
+        text-align: center;
+        font-family:'quantumregular';
+        color: #000;
+        background: none;
+        border: none;
+    }
+
+    .pointer  {
+        display: none;
+    }
+
+    
+}
