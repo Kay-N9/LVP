@@ -144,6 +144,7 @@ h4{
 main article{
     font-size: 1.5rem;
     height: 70vh;
+    text-align: start;
 }
 
 .phone-slice{
