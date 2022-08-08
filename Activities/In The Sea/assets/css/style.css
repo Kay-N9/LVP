@@ -112,6 +112,12 @@ h4{
 
 }
 
+#img9{
+  background: linear-gradient(90.08deg, #000000 0.06%, rgba(0, 0, 0, 0) 65.33%), url(../image/Image\ 9.jpg)no-repeat;
+  background-size: cover;
+
+}
+
 .tab li:nth-child(even){
   flex-direction: row-reverse;
 
@@ -225,6 +231,12 @@ article{
 
   #img8 {
     background: url(../image/Image\ 8.jpg)no-repeat;
+    background-size: cover;
+    background-position:center;
+  }
+
+  #img9 {
+    background: url(../image/Image\ 9.jpg)no-repeat;
     background-size: cover;
     background-position:center;
   }

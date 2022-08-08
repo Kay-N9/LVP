@@ -205,11 +205,11 @@ li{
 @media screen and (max-width: 1440px){
 
     .w60 {
-        width: 60%;
+        width: 68%;
     }
 
     .w50 {
-        width: 52%;
+        width: 71%;
     }
 
     .header::after {
