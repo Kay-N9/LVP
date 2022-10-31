@@ -1,9 +1,6 @@
-@font-face {
-  font-family: 'quantumregular';
-  src: url('../fonts/quantum-webfont.woff2') format('woff2'),
-       url('../fonts/quantum-webfont.woff') format('woff');
 
-}
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Racing+Sans+One&display=swap');
+
 
 *{
   padding: 0;
@@ -23,14 +20,14 @@ h1{
   font-size: 3rem;
   font-weight: 500;
   text-align: center;
-  font-family: 'quantumregular';
-
+  font-family:'Racing Sans One', cursive;
 }
+
 h2{
   font-size: 2.5rem;
   font-weight: 500;
   text-align: center;
-  color: #D51C2A;
+  color: #D4A11C;
   text-transform: uppercase;
   margin: 1.7rem 0;
 }
@@ -39,9 +36,9 @@ h4{
   font-weight: 500;
   font-size: 20px;
   text-align: center;
-  color: #D51C2A;
+  color: #D4A11C;
   text-transform: uppercase;
-  font-family: 'quantumregular';
+  font-family:'Racing Sans One', cursive;
 }
 
 
@@ -141,7 +138,7 @@ article{
 }
 
 legend{
-  color: #D51C2A;
+  color: #D4A11C;
   align-self: end;
 }
 .item p{
@@ -160,9 +157,9 @@ legend{
   padding: 10px 10px;
   margin: 0 10px;
   transition-duration: .25s;
-  font-family: 'quantumregular';
+  font-family:'Racing Sans One', cursive;
   font-size: 20px;
-  border: 2px solid #D51C2A;
+  border: 2px solid #D4A11C;
   background-color: #1d1e1f73;
 }
 

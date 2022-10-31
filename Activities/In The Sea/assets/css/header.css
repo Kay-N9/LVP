@@ -1,9 +1,11 @@
-@font-face {
+/* @font-face {
     font-family: 'quantumregular';
     src: url('../fonts/quantum-webfont.woff2') format('woff2'),
          url('../fonts/quantum-webfont.woff') format('woff');
   
-  }
+} */
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Racing+Sans+One&display=swap');
 
 
 /************************************************************************************************ GRID *****************************************************************************/
@@ -37,7 +39,7 @@
 }
 
 .font-q{
-    font-family:'quantumregular';
+    font-family:'Racing Sans One', cursive;
 }
 
 .w30{
@@ -80,14 +82,14 @@ header{
 
 
 .head .nav{
-    text-transform:lowercase;
-    font-family: 'quantumregular';
+    text-transform:uppercase;
+    font-family:'Racing Sans One', cursive;
     font-weight: 400;
    font-size: 2.5rem;
 }
 
 nav li a:hover{
-    color: #D51C2A;
+    color: #D4A11C;
 }
 
 li{
@@ -95,8 +97,7 @@ li{
 }
 
 .logo{
-    width: 194px;
-    height: 61px;
+    width: 15.3rem;
 }
 
 .header{
@@ -135,7 +136,7 @@ li{
     grid-template-columns: 1fr 1fr 1fr 1fr;
     top: 9.3%;
     left: 25%;
-    border: 1px solid red;
+    border: 1px solid #D4A11C;
     width: 35%;
     padding: 0.5rem 1.5rem;
     background: black;
@@ -151,8 +152,8 @@ li{
 
 #red,
 .brands p:hover{
-    font-family: 'quantumregular';
-    color: #D51C2A;
+    font-family:'Racing Sans One', cursive;
+    color: #D4A11C;
 }
 
 /*************************************************************************************** MENU ****************************************************************************************/
@@ -208,8 +209,8 @@ li{
     padding: 10px 10px;
     margin: 0 10px;
     transition-duration: .25s;
-    font-family: 'quantumregular';
-    border: 2px solid #D51C2A;
+    font-family:'Racing Sans One', cursive;
+    border: 2px solid #D4A11C;
     background-color: #1d1e1f73;
 }
 
@@ -281,7 +282,7 @@ li{
     .brands{
         top: 93%;
         left: 12%;
-        border: 1px solid red;
+        border: 1px solid #D4A11C;
         width: 95%;
     }
 
@@ -355,7 +356,7 @@ li{
     
     #active:checked + .phone-btn > span::after,
     #active:checked + .phone-btn > span{
-        background-color: #D51C2A;
+        background-color: #D4A11C;
     }
     
     .head a{
@@ -418,7 +419,7 @@ li{
         font-weight: 700;
         padding: 10px 0;
         text-align: center;
-        font-family:'quantumregular';
+        font-family:'Racing Sans One', cursive;
         color: #000;
         background: none;
         border: none;
@@ -446,10 +447,10 @@ footer{
 
 .foot p:hover,
 #Terms a:hover{
-    color: #D51C2A;
+    color: #D4A11C;
 }
 #Terms a:hover{
-    font-family: 'quantumregular';
+    font-family:'Racing Sans One', cursive;
 }
 .foot{
     display: grid;

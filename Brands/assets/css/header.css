@@ -1,9 +1,11 @@
-@font-face {
+/* @font-face {
     font-family: 'quantumregular';
     src: url('../fonts/quantum-webfont.woff2') format('woff2'),
          url('../fonts/quantum-webfont.woff') format('woff');
   
-  }
+} */
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Racing+Sans+One&display=swap');
 
 
 /************************************************************************************************ GRID *****************************************************************************/
@@ -63,14 +65,14 @@ a{
 
 /************************************************************************************************ HEADER ****************************************************************************/
 .head .nav{
-    text-transform:lowercase;
-    font-family: 'quantumregular';
+    text-transform:uppercase;
+    font-family:'Racing Sans One', cursive;
     font-weight: 400;
    font-size: 2rem;
 }
 
 nav li a:hover{
-    color: #D51C2A;
+    color: #D4A11C;
 }
 
 li{
@@ -78,8 +80,7 @@ li{
 }
 
 .logo{
-    width: 194px;
-    height: 61px;
+    width: 15.3rem;
 }
 
 .header {
@@ -120,7 +121,7 @@ li{
 #red,
 .brands p:hover{
     font-size: 1.5rem;
-    color: #D51C2A;
+    color: #D4A11C;
     height: 100%;
 }
 
@@ -177,8 +178,8 @@ li{
     padding: 10px 10px;
     margin: 0 10px;
     transition-duration: .25s;
-    font-family: 'quantumregular';
-    border: 2px solid #D51C2A;
+    font-family:'Racing Sans One', cursive;
+    border: 2px solid #D4A11C;
     background-color: #1d1e1f73;
 }
 
@@ -321,7 +322,7 @@ li{
     
     #active:checked + .phone-btn > span::after,
     #active:checked + .phone-btn > span{
-        background-color: #D51C2A;
+        background-color: #D4A11C;
     }
     
     .head a{
@@ -380,7 +381,7 @@ li{
         font-weight: 700;
         padding: 10px 0;
         text-align: center;
-        font-family:'quantumregular';
+        font-family:'Racing Sans One', cursive;
         color: #000;
         background: none;
         border: none;
