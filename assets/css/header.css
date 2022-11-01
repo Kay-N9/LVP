@@ -1,8 +1,3 @@
-/* @font-face {
-    font-family: 'quantumregular';
-    src: url('../fonts/quantum-webfont.woff2') format('woff2'),
-         url('../fonts/quantum-webfont.woff') format('woff');
-} */
 
 @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Racing+Sans+One&display=swap');
 
@@ -73,7 +68,7 @@ a{
 }
 
 nav li a:hover{
-    color:#D4A11C;
+    color:#EEB420;
 }
 
 li{
@@ -89,10 +84,8 @@ li{
     margin-left: 2%;
     margin-right: 2%;
     position: absolute;
-    /* top: 0; */
     width: 90.4%;
 }
-
 
 .brands img{
     width: 35%;
@@ -103,6 +96,7 @@ li{
     font-weight: 500;
     margin: 1%;
 }
+
 .car:hover + .brands,
 .brands:hover{
     visibility: visible;
@@ -116,7 +110,7 @@ li{
     grid-template-columns: 1fr 1fr 1fr 1fr;
     top: 93%;
     left: 25%;
-    border: 1px solid #D4A11C;
+    border: 1px solid #EEB420;
     width: 40%;
     padding: 0.5rem 1.5rem;
     background: black;
@@ -132,7 +126,7 @@ li{
 #red,
 .brands a:hover p{
     font-family: 'Racing Sans One', cursive;
-    color: #D4A11C;
+    color: #EEB420;
 }
 
 /*************************************************************************************** MENU ****************************************************************************************/
@@ -153,7 +147,7 @@ li{
     right: 7rem;
     width: 3rem;
     height: 1rem;
-    z-index: 1;
+    z-index: 5;
 }
 
 .menu__btn > span,
@@ -175,10 +169,10 @@ li{
     position: fixed;
     top: 9.5%;
     right: -100%;
-    width: 32rem;
+    width: 33rem;
     list-style: none;
     transition-duration: .25s;
-    z-index: 2;
+    z-index: 5;
 } 
 
 .menu__item p, .menu  p{
@@ -187,9 +181,10 @@ li{
     left: 5%;
     padding: 10px 10px;
     margin: 0 10px;
+    font-size: 1.2rem;
     transition-duration: .25s;
     font-family:'Racing Sans One', cursive;
-    border: 2px solid #D4A11C;
+    border: 2px solid #EEB420;
     background-color: #1d1e1f73;
 }
 
@@ -201,66 +196,33 @@ li{
 @media screen and (max-width: 1440px){
 
     .w60 {
-        width: 68%;
+        width: 69%;
     }
 
     .w50 {
         width: 71%;
     }
 
+    .logo {
+        width: 14.3rem;
+    }
+    
     .header::after {
         width: 20rem;
         left: 43%;
     }
-
-    /* .logo {
-        width: 175px;
-        height: 55px;
-    } */
 
     .brands {
         left: 18%;
         width: 55%;
     }
 
+    .head .nav {
+        font-size: 1.8rem;
+    }
 }
 
 @media screen and (max-width: 1024px){
-    .w50{
-        width: 85%;
-    }
-
-    .w60{
-        width: 67.5%;
-    }
-
-/* 
-    .logo {
-        width: 165px;
-        height: 55px;
-    } */
-
-    .menu__btn{
-        right: 5rem;
-    }
-
-    .header::after {
-        width: 20rem;
-        left: 39%;
-    }
-
-    .brands{
-        top: 93%;
-        left: 12%;
-        border: 1px solid #D4A11C;
-        width: 70%;
-    }
-
-
-}
-
-
-@media screen and (max-width: 768px){
     
     .w50 {
         width: 100%;
@@ -326,7 +288,7 @@ li{
     
     #active:checked + .phone-btn > span::after,
     #active:checked + .phone-btn > span{
-        background-color: #D4A11C;
+        background-color: #EEB420;
     }
     
     .head a{
@@ -355,15 +317,14 @@ li{
 
 @media screen and (max-width: 425px){
 
-
     .header {
         margin-top: 4%;
     }
-/* 
-    .logo{
-        width: 118px;
-        height: 37px;
-    } */
+
+    .logo {
+        width: 12rem;
+    }
+
     .menu-d{
         flex-direction: column;
     }
@@ -376,7 +337,6 @@ li{
     }
     .menu p {
         font-size: 15px;
-        /* left: 5%; */
         margin: 0;
         font-weight: 700;
         padding: 10px 0;
@@ -390,12 +350,19 @@ li{
     .pointer  {
         display: none;
     }
-
-
     
 }
 
+@media screen and (max-width: 375px){
+
+    .logo {
+        width: 11rem;
+    }
+
+}
+
 /******************************************************** FOOTER ************************************************************************/
+
 footer{
     margin: auto  5rem 1%;
     position: relative;
@@ -407,13 +374,19 @@ footer{
     width: 50%;
 }
 
+#Terms{
+    flex-wrap: wrap;
+}
+
 .foot p:hover,
 #Terms a:hover{
-    color: #D4A11C;
+    color: #EEB420;
 }
+
 #Terms a:hover{
     font-family:'Racing Sans One', cursive;
 }
+
 .foot{
     display: grid;
     grid-template-columns: 1fr  1fr  1fr  1fr;
@@ -439,8 +412,8 @@ footer{
     }
 }
 
-
 @media screen and (max-width: 425px){
+
     .foot {
         grid-template-columns: 1fr 1fr;
         gap: 10px;
