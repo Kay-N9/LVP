@@ -154,16 +154,15 @@ h1{
     border-right: #D4A11C 1px solid;
 }
 .img h1{
-    display: block;
+    display: none;
+    transition: all .25s ease;
 }
 
 .img:hover h1{
-    display: none;
-    transition: all .25s ease;
-
+    display: block;
 }
 
-#img1:hover{
+#img1{
     background: url(../image/Image\ 1.jpg)no-repeat;
     background-size: cover;
     background-position: center;
@@ -174,7 +173,7 @@ h1{
 
 }
 
-#img2:hover{
+#img2{
     background: url(../image/Image\ 2.jpg)no-repeat;
     background-size: cover;
     background-position: center;
@@ -184,8 +183,39 @@ h1{
     transition: all 1s ease;
 }
 
-#img3:hover{
+#img3{
     background: url(../image/Image\ 3.jpg)no-repeat;
+    background-size: cover;
+    background-position: center;
+    -o-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+}
+
+#img1:hover{
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.36), rgba(0, 0, 0, 0.36)), url(../image/Image\ 1.jpg)no-repeat;
+    background-size: cover;
+    background-position: center;
+    -o-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -webkit-transition: all 1s ease-in-out;
+    transition: all .25s ease-in-out;
+
+}
+
+#img2:hover{
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.36), rgba(0, 0, 0, 0.36)), url(../image/Image\ 2.jpg)no-repeat;
+    background-size: cover;
+    background-position: center;
+    -o-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+}
+
+#img3:hover{
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.36), rgba(0, 0, 0, 0.36)), url(../image/Image\ 3.jpg)no-repeat;
     background-size: cover;
     background-position: center;
     -o-transition: all 1s ease;

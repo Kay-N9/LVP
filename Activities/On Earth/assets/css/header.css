@@ -76,10 +76,6 @@ a{
 }
 
 /************************************************************************************************ HEADER ****************************************************************************/
-header{
-  height: 4vw;
-}
-
 
 .head .nav{
     text-transform:uppercase;
@@ -107,14 +103,8 @@ li{
     width: 100%;
 }
 
-/* .head li  {
-    height: 3 rem;
-} */
-
-
 .brands img{
     width: 35%;
-    /* height: 100%; */
 }
 
 .brands p {
@@ -151,9 +141,9 @@ li{
 }
 
 #red,
-.brands p:hover{
-    font-family:'Racing Sans One', cursive;
-    color: #D4A11C;
+.brands a:hover p{
+    font-family: 'Racing Sans One', cursive;
+    color: #EEB420;
 }
 
 /*************************************************************************************** MENU ****************************************************************************************/
@@ -222,21 +212,20 @@ li{
 @media screen and (max-width: 1440px){
 
     .w60 {
-        width: 63%;
+        width: 75%;
     }
 
     .w50 {
-        width: 65%;
+        width: 70%;
     }
 
     .header::after {
-        width: 19rem;
-        left: 39%;
+        width: 20rem;
+        left: 37%;
     }
 
     .logo {
-        width: 175px;
-        height: 55px;
+        width: 14.3rem;
     }
 
     .brands {
@@ -244,53 +233,20 @@ li{
         width: 55%;
     }
 
-
-    .header{
-        width: 94%;
+    .head .nav {
+        font-size: 2.3rem;
     }
-
+    
 }
+
+@media screen and (max-width: 1188px){
+    .head .nav {
+        font-size: 2rem;
+    }
+}
+
 
 @media screen and (max-width: 1024px){
-    .w50{
-        width: 80%;
-    }
-
-    .w60{
-        width: 70%;
-    }
-
-    .logo {
-        width: 165px;
-        height: 55px;
-    }
-
-    .menu__btn{
-        right: 5rem;
-    }
-
-    header {
-        height: 5vw;
-    }
-
-    .header::after {
-        width: 22rem;
-        left: 34%;
-        top: 8%;
-    }
-
-    .brands{
-        top: 93%;
-        left: 12%;
-        border: 1px solid #D4A11C;
-        width: 95%;
-    }
-
-
-}
-
-
-@media screen and (max-width: 768px){
     
     .w50 {
         width: 100%;
@@ -368,10 +324,7 @@ li{
 
     .menu{
         display: block;
-        /* position: relative; */
-        /* left: 10%; */
     }
-
     
     .header::after,
     .menu__btn,
@@ -383,7 +336,6 @@ li{
     .head li{
         text-align: center;
         margin: 0.5rem;
-
     }
 }
 
@@ -393,10 +345,8 @@ li{
         margin-top: 4%;
     }
     
-
-    .logo{
-        width: 118px;
-        height: 37px;
+    .logo {
+        width: 12rem;
     }
 
     .menu{
@@ -412,7 +362,6 @@ li{
 
     .menu p {
         font-size: 15px;
-        /* left: 5%; */
         margin: 0;
         font-weight: 700;
         padding: 10px 0;
@@ -426,7 +375,6 @@ li{
     .pointer  {
         display: none;
     }
-
     
 }
 
@@ -443,13 +391,19 @@ footer{
     width: 50%;
 }
 
+#Terms{
+    flex-wrap: wrap;
+}
+
 .foot p:hover,
 #Terms a:hover{
-    color: #D4A11C;
+    color: #EEB420;
 }
+
 #Terms a:hover{
     font-family:'Racing Sans One', cursive;
 }
+
 .foot{
     display: grid;
     grid-template-columns: 1fr  1fr  1fr  1fr;
@@ -475,8 +429,8 @@ footer{
     }
 }
 
-
 @media screen and (max-width: 425px){
+
     .foot {
         grid-template-columns: 1fr 1fr;
         gap: 10px;

@@ -22,6 +22,7 @@ body {
 h1{
   font-size: 3rem;
   font-weight: 500;
+  text-transform: uppercase;
   text-align: center;
   font-family: 'Racing Sans One', cursive;
 }
@@ -34,7 +35,10 @@ h2{
   font-family: 'Lobster', cursive;
   color: #D4A11C;
   text-transform: uppercase;
-  margin: 1.7rem 0;
+  background: #780C0D;
+  padding: 1rem;
+  transform: translate3d(0, -100%, 0);
+  transition: transform 300ms;
 }
 
 h4{
@@ -47,230 +51,189 @@ h4{
 .tab p{
   font-size: 1.1rem;
   line-height: 30px;
-  text-align: justify;
-  margin: 3rem 0;
+  text-align: left;
+  margin: 2rem 0;
 }
 
 
 /****************************************************************** NUMBER **********************/
+
+.e_body:hover,
+.e_body:focus,
+h2:hover,
+h2:focus{
+  transform: translate3d(0, 0, 0);
+}
+
+.item_b:hover,
+.item_b:focus{
+  opacity: 1;
+}
 
 .container{
   margin: 0 auto;
   max-width: 125rem;
 }
 
-.tab .img{
-  background: linear-gradient(270deg, #000000 0%, rgba(0, 0, 0, 0) 57.47%), url(../image/Image\ 1.jpg)no-repeat;
-  background-size: cover;
-  background-position:center;
-  width: 50%;
-  height: 50vh;  
+.tab{
+  display: grid;
+  grid-gap: 5rem;
+  grid-template-columns: 1fr 1fr;
+  margin: 0 2rem;
+}
 
+.item{
+  position: relative;
+  overflow: hidden;
+	height: 40rem;
+}
+
+.e_body{
+	height: 100%;
+	position: absolute;
+	width: 100%;
+	top: 0;
+	transition: transform 300ms;
+  background: #780C0D;
+	transform: translate3d(0, 100%, 0);
+}
+
+.item_b{
+  flex-grow: 1;
+  padding: 1rem 3rem;
+	opacity: 0;
+	transition: opacity 500ms 100ms;
 }
 
 
-#img2{
-  background: linear-gradient(90.08deg, #000000 0.06%, rgba(0, 0, 0, 0) 65.33%), url(../image/Image\ 2.jpg)no-repeat;
-  background-size: cover;
-  background-position:center;
-}
-
-#img3{
-  background: linear-gradient(270deg, #000000 0%, rgba(0, 0, 0, 0) 57.47%), url(../image/Image\ 3.jpg)no-repeat;
-  background-size: cover;
-  background-position:center;
-
-}
-
-#img4{
-  background: linear-gradient(90.08deg, #000000 0.06%, rgba(0, 0, 0, 0) 65.33%), url(../image/Image\ 4.jpg)no-repeat;
-  background-size: cover;
-  background-position:center;
-
-
-}
-
-#img5{
-  background: linear-gradient(270deg, #000000 0%, rgba(0, 0, 0, 0) 57.47%), url(../image/Image\ 5.jpg)no-repeat;
-  background-size: cover;
-  background-position:center;
-}
-
-#img6{
-  background: linear-gradient(90.08deg, #000000 0.06%, rgba(0, 0, 0, 0) 65.33%), url(../image/Image\ 6.jpg)no-repeat;
-  background-size: cover;
-  background-position:center;
-}
-
-#img7{
-  background: linear-gradient(270deg, #000000 0%, rgba(0, 0, 0, 0) 57.47%), url(../image/Image\ 7.jpg)no-repeat;
-  background-size: cover;
-  background-position:center;
-
-}
-
-#img8{
-  background: linear-gradient(270deg, #000000 0%, rgba(0, 0, 0, 0) 57.47%), url(../image/Image\ 8.jpg)no-repeat;
-  background-size: cover;
-  background-position:center;
-
-}
-
-.tab li:nth-child(even){
-  flex-direction: row-reverse;
-
-}
-
-article {
-  margin: 0 12rem 0 3rem;
-}
-
-.img2 p { 
-  margin: 1rem 0;
+.tab img{ 
+  height: 100%;
 }
 
 @media screen and (max-width: 1440px){
-  .container{
-    margin: 0 auto;
-    max-width: 85rem;
+
+  .long p {
+    line-height: 27px;
+    margin: .5rem 0;
   }
 
-  header {
-    height: 6vw;
-  }
-
-
-  h2{
-    font-size: 2rem;
-  } 
-
-  h4{
-    font-size: 18px;
-  }
-
-  article {
-    margin: 0 3rem;
-  }
 }  
 
-@media screen and (max-width: 1024px){
-  article{
-    margin: 0;
-  }
+@media screen and (max-width: 1188px){
 
-  .tab .img {
-    height: 40vh;
-  }
-
-  .bm2,
-  .bm {
-    margin-bottom: 10%;
+  .item_b {
+    padding: 1rem 2rem;
   }
 
   .tab p {
-    font-size: .9rem;
-    line-height: 20px; 
-    margin: 1rem ;
+    font-size: 1.2rem;
+    line-height: 23px;
+    margin: .5rem 0;
   }
 
-  /* .tab .img{
-    width: 75%;
-  } 
+  .item {
+    height: 35rem;
+  }
 
-  #img2{
-    width: 40%;
+  .tab img{ 
+    width: 100%;
+  }
+
+  .tab {
+    grid-gap: 2rem;
+  }
+
+}
+
+@media screen and (max-width: 1024px){
+
+  /* .item {
+    height: 40rem;
   } */
 
-  .img2 h2 {
-    margin: 1rem 0;
-  }
-  .img2 p{
-    margin: 0.9rem;
+  .long p {
+    font-size: .99rem;
   }
 }
-@media screen and (max-width: 768px){
-  .container {
-    margin: 0 auto;
-    max-width: 38rem;
-  }
-  .tab li,
-  .tab li:nth-child(even){
-    flex-direction: column;
-  }
 
-  .tab .img{
-    width: 100%;
-  } 
+@media screen and (max-width: 990px){
+
+  .tab{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    grid-gap: 2rem;
+  }
+  .item_b {
+    padding: 3rem 2rem;
+  }
 
   .tab p {
-    font-size: .9rem;
-    line-height: 20px;
-    margin: 2rem;
-    justify-content: center;
+    font-size: 1.3rem;
+    line-height: 35px;
+    margin: 0.5rem 0;
   }
 
-  #img1{
-    background: url(../image/Image\ 1.jpg)no-repeat;
-    background-size: cover;  
-    background-position:top;
-
+  .long p {
+    font-size: 1.2rem;
+    line-height: 28px;
   }
 
-  #img2 {
-    background: url(../image/Image\ 2.jpg)no-repeat;
-    background-size: cover;
-    background-position:center;
-    /* width: 100%; */
-  }
+}
 
-  #img3 {
-    background: url(../image/Image\ 3.jpg)no-repeat;
-    background-size: cover;
-    background-position:center;
-  }
-
-  #img4 {
-    background: url(../image/Image\ 4.jpg)no-repeat;
-    background-size: cover;
-    background-position:center;
-  }
-
-  #img5 {
-    background: url(../image/Image\ 5.jpg)no-repeat;
-    background-size: cover;
-    background-position:center;
-  }
-
-  #img6 {
-    background: url(../image/Image\ 6.jpg)no-repeat;
-    background-size: cover;
-    background-position:center;
-  }
-
-  #img7 {
-    background: url(../image/Image\ 7.jpg)no-repeat;
-    background-size: cover;
-    background-position:center;
+@media screen and (max-width: 770px){
+  
+  .item_b {
+    padding: 1rem 2rem;
   }
   
-  #img8 {
-    background: url(../image/Image\ 8.jpg)no-repeat;
-    background-size: cover;
-    background-position:center;
+  .item {
+    height: 40rem;
+  }
+
+  .long p {
+    font-size: 1.1rem;
+    line-height: 30px;
+  }
+}
+
+@media screen and  (max-width: 590px) {
+  .tab {
+    margin: 0 1rem;
+  }
+  .tab p {
+    font-size: 1.2rem;
+  }
+
+  .long p {
+    font-size: 1.1rem;
+    line-height: 26px;
+  }
+}
+
+@media screen and  (max-width: 488px) {
+  .long p {
+    font-size: 1rem;
+    line-height: 25px;
   }
 }
 
 @media screen and  (max-width: 425px) {
-
-  .container {
-    margin: 0 auto;
-    max-width: 23rem;
+  
+  .tab p {
+    font-size: 1.1rem;
+    line-height: 30px;
   }
-  h2 {
-    font-size: 1.5rem;
+  
+  .long p {
+    font-size: .9rem;
+    line-height: 25px;
   }
+}
 
-  .bm2, .bm {
-    margin-bottom: 20%;
+
+@media screen and  (max-width: 375px) {
+  .long p {
+    line-height: 21px;
   }
 }

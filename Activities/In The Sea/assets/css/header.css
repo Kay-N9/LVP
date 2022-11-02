@@ -151,9 +151,9 @@ li{
 }
 
 #red,
-.brands p:hover{
-    font-family:'Racing Sans One', cursive;
-    color: #D4A11C;
+.brands a:hover p{
+    font-family: 'Racing Sans One', cursive;
+    color: #EEB420;
 }
 
 /*************************************************************************************** MENU ****************************************************************************************/
