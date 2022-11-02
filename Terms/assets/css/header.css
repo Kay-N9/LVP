@@ -390,6 +390,7 @@ li{
 }
 
 /******************************************************** FOOTER ************************************************************************/
+
 footer{
     margin: auto  5rem 1%;
     position: relative;
@@ -401,13 +402,19 @@ footer{
     width: 50%;
 }
 
+#Terms{
+    flex-wrap: wrap;
+}
+
 .foot p:hover,
 #Terms a:hover{
-    color: #D4A11C;
+    color: #EEB420;
 }
+
 #Terms a:hover{
     font-family:'Racing Sans One', cursive;
 }
+
 .foot{
     display: grid;
     grid-template-columns: 1fr  1fr  1fr  1fr;
@@ -433,8 +440,8 @@ footer{
     }
 }
 
-
 @media screen and (max-width: 425px){
+
     .foot {
         grid-template-columns: 1fr 1fr;
         gap: 10px;

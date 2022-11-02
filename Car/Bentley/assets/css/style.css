@@ -223,7 +223,7 @@ legend{
   }
 
   .numbers{
-    right: 1%;
+    display: none;
   }
 
 }
@@ -246,10 +246,6 @@ legend{
     top: 55%;
     width: 20rem;
     height: 32rem;
-  }
-
-  .numbers{
-    display: none;
   }
 
   .item p::after {

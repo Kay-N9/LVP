@@ -40,11 +40,11 @@
 }
 
 .w50{
-    width: 49%;
+    width: 65%;
 }
 
 .w60{
-    width: 62%;
+    width: 70%;
 }
 
 .w100{
@@ -190,22 +190,9 @@ li{
 
 @media screen and (max-width: 1440px){
 
-    .w60 {
-        width: 65%;
-    }
-
-    .w50 {
-        width: 52%;
-    }
-
-    .header::after {
-        width: 15rem;
-        left: 41%;
-    }
 
     .logo {
-        width: 175px;
-        height: 55px;
+        width: 14.3rem;
     }
 
     .brands {
@@ -214,65 +201,36 @@ li{
 
 }
 
-@media screen and (max-width: 1024px){
-    h1 {
-        font-size: 3rem;
+@media screen and (max-width: 1188px){
+    
+    .w60 {
+        width: 75%;
     }
 
-    .menu__box {
-        width: 25rem;
+    .head .nav {
+        font-size: 1.8rem;
     }
-
-    .menu__item p {
-        padding: 9px 5px;
-        margin: 0 10px;
-        font-size: 0.8rem;
-    }
-    .w50{
-        width: 60%;
-    }
-
-    .w60{
-        width: 70%;
-    }
-
-    .logo {
-        width: 165px;
-        height: 55px;
-    }
-
-    .menu__btn{
-        right: 5rem;
-    }
-
-    .header::after {
-        width: 15rem;
-        left: 37%;
-    }
-
-    .brands{
-        padding: 1.5rem 0;
-        width: 95%;
-    }
-
-
 }
 
 
-@media screen and (max-width: 768px){
+
+
+
+@media screen and (max-width: 1024px){
     
     .w50 {
         width: 100%;
     }
-
+    
     .header {
         margin-top: 2%;
     }
-
+    
     .brands{
-        margin: 5rem;
+        padding: 1.5rem 0;
+        width: 95%;
     }
-
+    
     .phone-btn {
         position: fixed;
         top: 30px;
@@ -281,7 +239,7 @@ li{
         height: 1rem;
         z-index: 12;
     }
-
+    
     .phone-btn > span,
     .phone-btn > span::after {
         display: block;
@@ -291,12 +249,12 @@ li{
         background-color: #ffffff;
         transition-duration: .25s;
     }
-
+    
     .phone-btn > span::after{
         content: '';
         top: 10px;
     }
-
+    
     .test{
         position: fixed;
         top: 0;
@@ -329,42 +287,45 @@ li{
         color: #000;
     }
     #active:checked ~ .test{
-         right: 0 !important;
-    }
-
-    .menu{
-        display: block;
-        position: relative;
-        left: 20%;
+        right: 0 !important;
     }
     
-    .header::after,
+    .menu{
+        display: block;
+    }
+    
     .menu__btn,
     .menu__item,
     #active {
         display: none;
     }
-
+    
     .head li{
         text-align: center;
         margin: 0.5rem;
     }
 }
 
-@media screen and (max-width: 425px){
+@media screen and (max-width: 768px){
 
+  .brands{
+        margin: 5rem;
+    }
+}
 
+@media screen and (max-width: 590px){
+    
+    
     .brands {
         grid-template-columns: 1fr 1fr;
     }
-
+    
     .header {
         margin-top: 4%;
     }
-
+    
     .logo{
-        width: 118px;
-        height: 37px;
+        width: 12rem;
     }
     .menu-d{
         flex-direction: column;

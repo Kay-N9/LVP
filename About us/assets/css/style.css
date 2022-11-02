@@ -197,7 +197,7 @@ main article{
         height: 65vh;
     }
 }
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 590px) {
     .container{
         flex-direction:column-reverse;
         margin: 0 2% ;

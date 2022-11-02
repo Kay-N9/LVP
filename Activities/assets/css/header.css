@@ -38,11 +38,11 @@
 } */
 
 .w50{
-    width: 50%;
+    width: 75%;
 }
 
 .w60 {
-    width: 68%;
+    width: 75%;
 }
 
 .w100{
@@ -232,8 +232,7 @@ li{
     }
 
     .logo {
-        width: 175px;
-        height: 55px;
+        width: 14.3rem;
     }
 
     .brands {
@@ -241,47 +240,20 @@ li{
         width: 55%;
     }
 
-    /* .menu__btn{
-        right: 0;
-    } */
+    .head .nav {
+        font-size: 2.3rem;
+    }
+    
 }
+
+@media screen and (max-width: 1188px){
+    .head .nav {
+        font-size: 2rem;
+    }
+}
+
 
 @media screen and (max-width: 1024px){
-    .w50{
-        width: 85%;
-    }
-
-    .w60{
-        width: 75%;
-    }
-
-
-    .logo {
-        width: 165px;
-        height: 55px;
-    }
-
-    .menu__btn{
-        right: 5rem;
-    }
-
-    .header::after {
-        width: 20rem;
-        left: 32%;
-    }
-
-    .brands{
-        top: 93%;
-        left: 12%;
-        border: 1px solid #D4A11C;
-        width: 70%;
-    }
-
-
-}
-
-
-@media screen and (max-width: 768px){
     
     .w50 {
         width: 100%;
@@ -359,8 +331,6 @@ li{
 
     .menu{
         display: block;
-        position: relative;
-        left: 20%;
     }
     
     .header::after,
@@ -382,10 +352,8 @@ li{
         margin-top: 4%;
     }
     
-
-    .logo{
-        width: 118px;
-        height: 37px;
+    .logo {
+        width: 12rem;
     }
 
     .menu{
@@ -401,7 +369,6 @@ li{
 
     .menu p {
         font-size: 15px;
-        /* left: 5%; */
         margin: 0;
         font-weight: 700;
         padding: 10px 0;

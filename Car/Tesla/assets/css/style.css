@@ -206,6 +206,9 @@ legend{
     bottom: 19%;
   }
 
+  .numbers{
+    display: none;
+  }
 }
 
 @media screen and (max-width: 768px){
@@ -224,10 +227,6 @@ legend{
 
   .item.prev {
     transform: translate(-160%, -40%);
-  }
-
-  .numbers{
-    display: none;
   }
 
   legend {

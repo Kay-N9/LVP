@@ -222,8 +222,9 @@ legend{
     bottom: 19%;
   }
 
+
   .numbers{
-    right: 1%;
+    display: none;
   }
 
 
@@ -251,10 +252,6 @@ legend{
     top: 55%;
     width: 16rem;
     height: 26rem;
-  }
-
-  .numbers{
-    display: none;
   }
 
   .item p::after {

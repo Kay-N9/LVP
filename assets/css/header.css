@@ -328,9 +328,7 @@ li{
     .menu-d{
         flex-direction: column;
     }
-    .menu{
-        left: 0%;
-    }
+
     .head li {
         text-align: center;
         margin: 0.5rem 0;

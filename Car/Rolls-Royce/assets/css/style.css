@@ -217,9 +217,8 @@ legend{
   }
 
   .numbers{
-    right: 1%;
+    display: none;
   }
-
 }
 
 @media screen and (max-width: 768px){
@@ -244,10 +243,6 @@ legend{
     top: 55%;
     width: 16rem;
     height: 26rem;
-  }
-
-  .numbers{
-    display: none;
   }
 
   .item p::after {

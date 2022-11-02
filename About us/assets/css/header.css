@@ -38,11 +38,11 @@
 }
 
 .w50{
-    width: 50%;
+    width: 65%;
 }
 
 .w60 {
-    width: 65%;
+    width: 70%;
 }
 
 .w100{
@@ -198,22 +198,8 @@ li{
 
 @media screen and (max-width: 1440px){
 
-    .w60 {
-        width: 70%;
-    }
-
-    .w50 {
-        width: 65%;
-    }
-
-    .header::after {
-        width: 20rem;
-        left: 43%;
-    }
-
     .logo {
-        width: 175px;
-        height: 55px;
+        width: 14.3rem;
     }
 
     .brands {
@@ -222,6 +208,23 @@ li{
     }
 }
 
+
+
+@media screen and (max-width: 1180px){
+    .w60 {
+        width: 75%;
+    }
+    .w50 {
+        width: 75%;
+    }
+
+    .head .nav {
+        font-size: 1.7rem;
+    }
+    .logo {
+        width: 13.3rem;
+    }
+}
 
 
 @media screen and (max-width: 1024px){
@@ -302,8 +305,6 @@ li{
 
     .menu{
         display: block;
-        position: relative;
-        left: 15%;
     }
     
     .header::after,
@@ -327,8 +328,7 @@ li{
     
 
     .logo{
-        width: 118px;
-        height: 37px;
+        width: 12rem;
     }
 
     .menu-d{
@@ -364,6 +364,7 @@ li{
 }
 
 /******************************************************** FOOTER ************************************************************************/
+
 footer{
     margin: auto  5rem 1%;
     position: relative;
@@ -375,13 +376,19 @@ footer{
     width: 50%;
 }
 
+#Terms{
+    flex-wrap: wrap;
+}
+
 .foot p:hover,
 #Terms a:hover{
-    color: #D4A11C;
+    color: #EEB420;
 }
+
 #Terms a:hover{
     font-family:'Racing Sans One', cursive;
 }
+
 .foot{
     display: grid;
     grid-template-columns: 1fr  1fr  1fr  1fr;
@@ -407,11 +414,12 @@ footer{
     }
 }
 
-
 @media screen and (max-width: 425px){
+
     .foot {
         grid-template-columns: 1fr 1fr;
         gap: 10px;
     }
 }
+
 
