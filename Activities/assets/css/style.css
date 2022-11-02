@@ -149,10 +149,10 @@ h1{
     height: 100vh;
     transition: all .25s ease;
 }
-#img1{
+/* #img1{
     border-left: #D4A11C 1px solid;
     border-right: #D4A11C 1px solid;
-}
+} */
 .img h1{
     display: none;
     transition: all .25s ease;
@@ -241,12 +241,12 @@ h1{
     .img h1{
         display: block;
     }
-
+/* 
     #img1{
         border-top: #D4A11C 1px solid;
         border-bottom: #D4A11C 1px solid;
         border-left: none;
         border-right: none;
-    }
+    } */
 }
 
